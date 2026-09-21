@@ -17,7 +17,7 @@
 
         <h1>Basic syntax for the <code class="tag">img</code> tag</h1>
 
-        <p>The <code class="tag">img</code> tag is the simplest and most common way to display an image in an html page. <!-- Put the smiley <img> here. --> It requires a <code>src</code> attribute, which indicates where the browser will find the image, and an <code>alt</code> attribute, which provides a textual version of the image for screen-readers.</p>
+        <p>The <code class="tag">img</code> tag is the simplest and most common way to display an image in an html page. <img src="https://wudesign.me/resources/using-images/images/smiley.jpg" alt="Smiley Face"> It requires a <code>src</code> attribute, which indicates where the browser will find the image, and an <code>alt</code> attribute, which provides a textual version of the image for screen-readers.</p>
 
         <samp><code class="tag">img src="path/to/image.jpg" alt="My image"</code></samp>
 
@@ -41,8 +41,8 @@
           <li>The image will be huge. So, add <code>class="full-screen"</code> to the tag, then use that class as the selector for a style rule that sets <code>width: 100%;</code> on the image.</li>
         </ol>
 
-        <!-- Put the shelf-cloud-wide <img> here. -->
-
+        <div class="full-screen"><img src="https://wudesign.me/resources/using-images/images/shelf-cloud-wide.jpg" alt="Shelf Cloud Wide">
+        </div>
       </section>
 
       <section>
@@ -55,9 +55,9 @@
           <li>Add another <code class="tag">img</code> after this set of instructions. Again, use src: <code>https://wudesign.me/resources/using-images/images/shelf-cloud-wide.jpg</code>.</li>
           <li>This time, add <code>class="square"</code> to the tag, and use that class as the selector for a style rule that sets <code>width: 280px; height: 280px;</code> on the image.</li>
         </ol>
-
-        <!-- Put the second shelf-cloud-wide <img> here. -->
-
+        <div class="square">
+        <img src="https://wudesign.me/resources/using-images/images/shelf-cloud-wide.jpg" alt="Shelf Cloud Wide Cropped">
+        </div>
         <p>The image is stretched! Not what we wanted. We need to tell the image to be cropped, not stretched.</p>
 
         <ol class="instructions">
@@ -249,8 +249,8 @@
 
 
       <figure class="compressed-image">
-        <!-- your <img> here... -->
-        <figcaption><!-- ---px wide, --% jpeg compression, --KB --></figcaption>
+        <img src="images/mysunsetimage.jpg" alt="My Image">
+        <figcaption><!-- 410px wide, 40% jpeg compression, 57KB --></figcaption>
       </figure>
 
 
