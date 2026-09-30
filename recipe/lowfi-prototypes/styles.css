@@ -48,9 +48,9 @@ h4 {
 }
 
 .grid img {
-    width: 250px;
     object-fit: cover;
     display: block;
+    height: 1000px;
 }
 
 footer {
