@@ -1,31 +1,56 @@
+body {
+    background-color:rgb(255, 234, 238);
+}
 html {
     margin-left: 10%;
     margin-right: 20%;
     margin-top:2%;
     margin-bottom:5%;
-    font-family: "courier-new", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 22px;
+    font-family: "deuterium-variable", sans-serif;
+    font-variation-settings: "wght" 200;
+    line-height: 20pt;
+    font-size:small;
+}
+
+.subtitle {
+    line-height: 7pt;
+    margin-bottom: 5rem;
 }
 
 h1 {
-    color: rgb(183, 14, 14);
-    text-transform: uppercase;
+    color: rgb(46, 30, 30);
+    text-transform: lowercase;
     font-size:35pt;
     line-height:30pt;
+    font-family: "roca", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0.5px;
 }
 
 h3 {
-    color:rgb(183, 14, 14);
-    text-transform: uppercase;
-    font-style: italic;
+    color:rgb(46, 30, 30);
+    text-transform: lowercase;
     font-size:18pt;
+    font-family: "roca", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+h4 {
+    color:rgb(46, 30, 30);
+    text-transform: lowercase;
+    font-size:12pt;
+    font-family: "roca", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1rem;
 }
 
 footer {
     text-align:center;
-    padding:20px;
+    padding:10px;
 }
 
 .footer-divider {
@@ -37,4 +62,17 @@ footer {
 .footer {
     font-size: 0.9em;
     color:black;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.images img {
+    width: 250px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: block;
 }
