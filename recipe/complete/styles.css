@@ -1,0 +1,332 @@
+body {
+    background-color:rgb(255, 234, 238);
+}
+
+html {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top:2%;
+    margin-bottom:5%;
+    font-family:"poppins", sans-serif;
+    font-weight:400;
+    font-style: normal;
+    line-height: 20pt;
+    font-size: small;
+    scroll-behavior:smooth;
+}
+
+.subtitle {
+    line-height: 15pt;
+    margin-bottom:1.5rem;
+}
+
+h1 {
+    color: rgb(46, 30, 30);
+    text-transform: lowercase;
+    font-size: 35pt;
+    line-height: 30pt;
+    font-family: "roca", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0.5px;
+    margin-top: 0;
+}
+
+h3 {
+    color:rgb(46, 30, 30);
+    text-transform: lowercase;
+    font-size: 18pt;
+    font-family: "roca", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0;
+}
+
+h4 {
+    color:rgb(46,30,30);
+    text-transform:lowercase;
+    font-size: 12pt;
+    font-family: "roca", sans-serif;
+    font-weight:400;
+    font-style:normal;
+    margin-bottom:1rem;
+}
+
+a {
+    color: rgb(46, 30, 30);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+}
+
+.footer-divider {
+    border:none;
+    border-top: 3px dotted rgb(46, 30, 30);
+    margin-bottom: 5%;
+}
+
+.footer {
+    font-size: 0.9em;
+    color:rgb(46, 30, 30);
+}
+
+.label {
+    text-transform:uppercase;
+    font-size:8pt;
+    letter-spacing: 1px;
+    color: rgb(46,30,30);
+    margin-bottom:5px;
+}
+
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px dotted rgb(46, 30, 30);
+    padding-bottom: 10px;
+    margin-bottom:40px;
+}
+
+.logo {
+    font-family:"roca", sans-serif;
+    font-size:16pt;
+    text-decoration:none;
+}
+
+.nav-links {
+    display:flex;
+    gap:25px;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration:underline;
+}
+
+.hero {
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
+    margin-bottom:70px;
+}
+
+.hero-text {
+    flex:1;
+}
+
+.hero-img {
+    flex:1;
+    width: 50%;
+    aspect-ratio:4/3;
+    object-fit: cover;
+    border-radius:10px;
+}
+
+.pills {
+    display:flex;
+    gap:10px;
+    margin-bottom: 30px;
+}
+
+.pill {
+    background-color: white;
+    border: 1px solid rgb(46, 30, 30);
+    border-radius: 20px;
+    padding: 2px 14px;
+    font-size:9pt;
+}
+
+.button {
+    display:inline-block;
+    background-color:rgb(46,30,30);
+    color:rgb(255, 234, 238);
+    text-decoration:none;
+    padding: 6px 22px;
+    border-radius: 6px;
+}
+
+.button:hover {
+    background-color:rgb(214,69,90);
+}
+
+.recipe {
+    display:flex;
+    gap:30px;
+    align-items: flex-start;
+    margin-bottom: 70px;
+}
+
+.instructions {
+    flex:2;
+}
+
+.sidebar {
+    flex: 1;
+    position: sticky;
+    top:20px;
+}
+
+.phase-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.step-photos {
+    display: grid;
+    gap:4px;
+}
+
+.step-photos.one {
+    grid-template-columns:1fr;
+}
+
+.step-photos.two {
+    grid-template-columns:repeat(3, 1fr);
+}
+
+.step-photos.three {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.step-photos figure {
+    margin:0;
+    position:relative;
+}
+
+.step-photos img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block
+}
+
+.step-photos.one img {
+    height: 260px;
+}
+
+.step-photos figcaption {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background-color: rgb(255, 234, 238);
+    border-radius: 20px;
+    padding: 0 10px;
+    font-size: 8pt;
+    line-height: 16pt;
+}
+
+.phase-content {
+    padding: 15px 20px;
+}
+
+.phase-content h4 {
+    margin-top: 8px;
+}
+
+.phase-tag {
+    background-color: rgb(255,234,238);
+    border-radius:20px;
+    padding:2px 12px;
+    font-size:8pt;
+}
+
+.phase-content ol {
+    padding-left: 20px;
+}
+
+.phase-content li {
+    margin-bottom: 8px;
+}
+
+strong {
+    font-family:"poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+em {
+    font-family: "poppins", sans-serif;
+    font-weight:400;
+    font-style: italic;
+}
+
+.ingredients box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+}
+
+.note-pill {
+    border: 1px solid rgb(46,30,30);
+    border-radius: 20px;
+    padding: 0 12px;
+    font-size: 8pt;
+}
+
+.checklist {
+    list-style: none;
+    padding-left: 0;
+}
+
+.checklist li {
+    line-height: 14pt;
+    margin-bottom: 8px;
+}
+
+.checklist input {
+    accent-color:rgb(214, 69, 90);
+    margin-right: 5px;
+}
+
+.nutrition-box {
+    background-color: rgb(245, 205, 212);
+    border-radius: 10px;
+    padding: 5px 20px 15px 20px;
+}
+
+.nutrition-box table {
+    width:100%;
+    border-collapse: collapse;
+}
+
+.nutrition-box td {
+    border-bottom: 1px dotted rgb(46, 30, 30);
+    padding: 3px 0;
+}
+
+.nutrition-box td:last-child {
+    text-align: right;
+}
+
+.finished {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    gap: 16px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.serving-note {
+    background-color:white;
+    border-radius: 10px;
+    padding: 5px 20px 15px 20px;
+}
+
+.finished img {
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    display:block;
+    border-radius: 10px;
+}
