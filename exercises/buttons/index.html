@@ -32,6 +32,12 @@
                 margin-bottom:40px;
             }
 
+            .button_grid {
+                display:grid;
+                grid-template-columns: repeat(auto-fill, 300px);
+                gap:10px;
+            }
+
             .button_container {
                 border: 1px solid #ddd;
                 margin: 0 10px 10px 0;
@@ -188,7 +194,7 @@
 		<main>
 
 			<h1>Button Styling &mdash; Chelsea Lee</h1>
-
+            <div class="button_grid">
 			<div class="button_container">
 				<a href="http://www.apple.com/" target="_blank" id="btn_apple">Apple</a>
 			</div>
@@ -209,6 +215,7 @@
 				<a href="http://www.explodingkittens.com/" target="_blank" id="btn_kittens">Exploding Kittens</a>
 				<div class="boom"></div>
 			</div>
+        </div>
 		</main>
 
 	</body>
