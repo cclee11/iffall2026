@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Buttons &mdash; Chelsea Lee</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Inter:500" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text:400,400i" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Nunito:900" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet" type="text/css">
+
+		<style>
+
+			body {
+                color:#333;
+                font-family: 'Open Sans', sans-serif;
+                margin:0;
+                padding:0;
+            }
+
+            main {
+                margin: 40px;
+            }
+
+            h1 {
+                font-size:30px;
+                margin-bottom:40px;
+            }
+
+            .button_container {
+                border: 1px solid #ddd;
+                margin: 0 10px 10px 0;
+                padding: 20px;
+                width: 300px;
+                height:300px;
+                float:lft;
+                overflow:hidden;
+                box-sizing:border-box;
+                text-align:center;
+            }
+
+            a#btn_apple {
+                display:inline-block;
+                margin-top:105px;
+                padding:12px 32px;
+                border-radius: 30px;
+                background-color:#1d1d1f;
+                color:#fff;
+                font-family:'Inter', sans-serif;
+                font-size: 18px;
+                font-weight:500;
+                text-decoration:none;
+                transition: all .3s;
+            }
+
+            a#btn_apple .arrow {
+                display: inline-block;
+                width:0;
+                opacity: 0;
+                transition: all .3s;
+            }
+
+            a#btn_apple:hover {
+                background-color: #0071e3;
+                transform: scale(1.05);
+                box-shadow: 0 6px 16px rgba(0, 113, 227, .35);
+            }
+
+            a#btn_apple:hover .arrow {
+                width:14px;
+                opacity:1;
+                margin-left: 6px;
+            }
+
+            a#btn_newyorker {
+                display:inline-block;
+                margin-top:105px;
+                padding:10px 24px;
+                border: 1px solid #111;
+                background-color: #fff;
+                color:#111;
+                font-family: 'Libre Caslon Text', Georgia, serif;
+				font-size: 22px;
+				font-style: normal;
+				text-decoration: none;
+                transition: all .3s;
+            }
+
+            a#btn_newyorker:hover {
+                background-color: #4a2e1f;
+                border-color: #4a2e1f;
+                color: #fff;
+                font-style:italic;
+            }
+
+            a#btn_coke {
+                display: inline-block;
+                margin-top: 105px;
+                padding: 12px 30px;
+                border: 3px solid #f40009;
+                border-radius: 8px;
+                background-color: #f40009;
+                color:#fff;
+                font-family: 'Lobster', cursive;
+				font-size: 24px;
+				text-decoration: none;
+                transition: all .3s;
+            }
+
+            a#btn_coke:hover {
+                background-color: #111;
+                color:#f40009;
+                box-shadow: 0 0 20px 4px rgba(244, 0, 0, .6);
+            }
+
+            a#btn_moo {
+                display: inline-block;
+                margin-top: 105px;
+                padding: 10px 36px;
+                border: 2px solid #00a88f;
+                border-radius: 4px;
+                background-color: #fff;
+                color: #00a88f;
+                font-family: 'Nunito', sans-serif;
+				font-size: 24px;
+				font-weight: 900;
+				text-decoration: none;
+                transition: all .3s;
+            }
+
+            a#btn_moo:hover {
+                background-color: #00a88f;
+                color:#fff;
+                transform: translate(-6px, -6px);
+                box-shadow: 6px 6px 0 #ffd23f, 12px 12px 0 #7b5cff;
+            }
+
+            .kittens_container {
+                position:relative;
+            }
+
+            .boom {
+                position:absolute;
+                top:50%;
+                left:50%;
+                width:240px;
+                height:240px;
+                margin:-120px 0 0 -120px;
+                background-color: #ff6a00;
+                clip-path: polygon(50% 0%, 58% 30%, 85% 10%, 70% 38%, 100% 40%, 72% 55%, 92% 85%, 62% 70%, 55% 100%, 45% 72%, 18% 92%, 30% 62%, 0% 55%, 28% 42%, 8% 15%, 40% 30%);
+                transition: transform .3s;
+            }
+
+            a#btn_kittens:hover + .boom {
+                transform: scale(1.15) rotate(15deg);
+            }
+
+            a#btn_kittens {
+                position:relative;
+                z-index: 1;
+                display:inline-block;
+                margin-top:100px;
+                padding: 12px 20px 8px;
+                border: 3px solid #111;
+                border-radius: 10px;
+                background-color: #ffd400;
+                box-shadow: 4px 4px 0 #111;
+                color:#e4002b;
+                font-family: 'Luckiest Guy', cursive;
+				font-size: 22px;
+				text-decoration: none;
+                transition: transform .2s;
+            }
+
+            a#btn_kittens:hover {
+                transform: rotate(-4deg) scale(1.1)
+            }
+
+		</style>
+	</head>
+	<body>
+
+		<main>
+
+			<h1>Button Styling &mdash; Chelsea Lee</h1>
+
+			<div class="button_container">
+				<a href="http://www.apple.com/" target="_blank" id="btn_apple">Apple</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.newyorker.com/" target="_blank" id="btn_newyorker">The New Yorker</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.coca-cola.com/" target="_blank" id="btn_coke">Coca-Cola</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.moo.com/us/" target="_blank" id="btn_moo">Moo</a>
+			</div>
+
+            <div class="button_container kittens_container">
+				<a href="http://www.explodingkittens.com/" target="_blank" id="btn_kittens">Exploding Kittens</a>
+				<div class="boom"></div>
+			</div>
+		</main>
+
+	</body>
+</html>
