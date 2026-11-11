@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Almabtrieb</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Inter+Tight:wght@300;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <header class="topbar">
+    <a href="#top" class="wordmark display">the cows are coming home!</a>
+    <nav class="outline" aria-label="Sections">
+      <a href="#intro">intro</a>
+      <a href="#year">a cow's year</a>
+      <a href="#names">many names</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <img class="hero__img" src="images/hero.jpeg" alt="A horned cow in front of a snowy Swiss mountain and green valley" />
+      <h1 class="display">almabtrieb</h1>
+      <p class="hero__sub">An Alpine tradition of flower crowns, cowbells and a whole-village party.</p>
+    </section>
+
+    <section class="section" id="intro">
+      <h2 class="display">what is <em>almabtrieb?</em></h2>
+      <div class="intro">
+        <p class="lede">Every fall, cows in the Alps take a big walk downhill. They've spent all summer munching grass on the mountaintops, and now it's time to go home for winter.</p>
+        <dl class="facts">
+          <div><dt>what it means</dt><dd>In German, Almabtrieb means "drive down from the mountain pasture."</dd></div>
+          <div><dt>when it happens</dt><dd>Late September or early October, every year.</dd></div>
+          <div><dt>where</dt><dd>Mountain villages across the Alps in Austria, Germany and Switzerland.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="numbers">
+      <h2 class="display">by <em>the numbers</em></h2>
+      <p>Every summer, almost a million cows head up to the mountains to graze. That's a lot of cowbells!</p>
+      <div class="stats">
+        <figure class="stat">
+          <div class="stat__frame" data-file="images/austria.jpeg"><img class="stat__img" src="images/austria.jpeg" alt="Cows in the Austrian Alps" onerror="this.remove()" /></div>
+          <figcaption><span class="display">500,000</span>cows in Austria</figcaption>
+        </figure>
+        <figure class="stat">
+          <div class="stat__frame" data-file="images/switzerland.jpeg"><img class="stat__img" src="images/switzerland.jpeg" alt="Cows in the Swiss Alps" onerror="this.remove()" /></div>
+          <figcaption><span class="display">380,000</span>cows in Switzerland</figcaption>
+        </figure>
+        <figure class="stat">
+          <div class="stat__frame" data-file="images/germany.jpeg"><img class="stat__img" src="images/germany.jpeg" alt="Cows in the German Alps" onerror="this.remove()" /></div>
+          <figcaption><span class="display">50,000</span>cows in Germany</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="map">
+      <h2 class="display">where to <em>see it</em></h2>
+      <p>Hundreds of mountain villages hold their own Almabtrieb every fall. Here are some of the best-known ones.</p>
+      <div class="map">
+        <div class="map__frame" data-file="images/map.png"><img class="map__img" src="images/map.png" alt="Map of the Alps with numbered pins on festival towns in Germany, Austria and Switzerland" onerror="this.remove()" /></div>
+        <ol class="map__list">
+          <li><span class="map__num">1</span><div><h3 class="display">reith im alpbachtal</h3><p>Tyrol, Austria · one of Austria's biggest, with a farmers' market</p></div></li>
+          <li><span class="map__num">2</span><div><h3 class="display">ramsau am dachstein</h3><p>Styria, Austria</p></div></li>
+          <li><span class="map__num">3</span><div><h3 class="display">bad hindelang</h3><p>Allgäu, Germany · about 1,000 animals come down</p></div></li>
+          <li><span class="map__num">4</span><div><h3 class="display">krün</h3><p>Bavaria, Germany · village party and farmers' market</p></div></li>
+          <li><span class="map__num">5</span><div><h3 class="display">charmey</h3><p>Gruyère, Switzerland · the country's best-known désalpe</p></div></li>
+          <li><span class="map__num">6</span><div><h3 class="display">st-cergue</h3><p>Vaud, Switzerland · hundreds of cows trot through the village</p></div></li>
+          <li><span class="map__num">7</span><div><h3 class="display">urnäsch</h3><p>Appenzell, Switzerland</p></div></li>
+        </ol>
+      </div>
+      <p class="map__source">Festival towns from regional tourism sites.</p>
+    </section>
+
+    <section class="section" id="year">
+      <h2 class="display">a cow's <em>year</em></h2>
+      <div class="seasons">
+        <article class="season">
+          <div class="season__frame" data-file="images/spring.jpeg"><img class="season__img" src="images/spring.jpeg" alt="Cows walking up the mountain in spring" onerror="this.remove()" /></div>
+          <h3 class="display">spring: going up</h3>
+          <p>Cows walk from the valley barns up to the mountain pastures. This trip is called the <em>Almauftrieb</em>.</p>
+        </article>
+        <article class="season">
+          <div class="season__frame" data-file="images/summer.jpeg"><img class="season__img" src="images/summer.jpeg" alt="Cows grazing on a mountain pasture in summer" onerror="this.remove()" /></div>
+          <h3 class="display">summer: grazing</h3>
+          <p>All summer, the herds munch fresh mountain grass, sometimes moving from one pasture to the next.</p>
+        </article>
+        <article class="season">
+          <div class="season__frame" data-file="images/fall.jpeg"><img class="season__img" src="images/fall.jpeg" alt="Cows walking down to the valley in fall" onerror="this.remove()" /></div>
+          <h3 class="display">fall: coming down</h3>
+          <p>The whole herd walks back down to the valley together. This is the Almabtrieb!</p>
+        </article>
+      </div>
+      <div class="sorting">
+        <h3 class="display">whose cow is whose?</h3>
+        <p>Cows from lots of different farms share the same pasture. Back in the valley, they're sorted at the <em>Viehscheid</em> so each cow goes home to its own farmer.</p>
+      </div>
+      <aside class="funfact">
+        <p class="funfact__label display">fun fact</p>
+        <p>One of the very first films ever made in Switzerland, back in 1896, showed cows walking up the mountain in spring.</p>
+      </aside>
+    </section>
+
+    <section class="section section--blue" id="dress-up">
+      <h2 class="display">why the cows <em>dress up</em></h2>
+      <div class="two-col">
+        <div>
+          <p>If the summer on the mountain went by with no accidents, the cows get dressed up for the trip home.</p>
+          <p>They wear big, colorful headdresses with flowers, ribbons and bells. A flower crown means everyone made it through the summer safe and sound.</p>
+        </div>
+        <div class="dress-up__frame" data-file="images/headdress.jpeg"><img class="dress-up__img" src="images/headdress.jpeg" alt="A cow wearing a flower headdress" onerror="this.remove()" /></div>
+      </div>
+    </section>
+
+    <section class="section" id="festivities">
+      <h2 class="display">party <em>time</em></h2>
+      <p>When the cows reach town, everyone celebrates with music, feasts and dancing. In some places the parade has become a huge festival, with stalls along the route selling farm food and handmade crafts.</p>
+      <ul class="party-list">
+        <li class="display">parades</li>
+        <li class="display">music &amp; dancing</li>
+        <li class="display">market stalls</li>
+      </ul>
+    </section>
+    <div class="carousel" aria-label="Photos of Alpine cows">
+      <div class="carousel__track">
+        <img src="images/cows-resting.jpeg" alt="Cows resting in an alpine meadow" />
+        <img src="images/cow-portrait.jpeg" alt="Close-up of a horned cow" />
+        <img src="images/cows-grazing.jpeg" alt="Cows grazing below a rocky peak" />
+        <img src="images/cow-head.jpeg" alt="Cow with a flower headdress" />
+        <img src="images/highland-calf.jpeg" alt="Shaggy calf on a flowery slope" />
+        <img src="images/cows-resting.jpeg" alt="" aria-hidden="true" />
+        <img src="images/cow-portrait.jpeg" alt="" aria-hidden="true" />
+        <img src="images/cows-grazing.jpeg" alt="" aria-hidden="true" />
+        <img src="images/cow-head.jpeg" alt="" aria-hidden="true" />
+        <img src="images/highland-calf.jpeg" alt="" aria-hidden="true" />
+      </div>
+    </div>
+
+    <section class="section section--alt" id="names">
+      <h2 class="display">one tradition, <em>many names</em></h2>
+      <p>Depending on where you are in the Alps, people call the cows' trip by different names.</p>
+      <ul class="list">
+        <li><span class="display">almabtrieb</span> Austria &amp; Germany · going down</li>
+        <li><span class="display">almauftrieb</span> Austria &amp; Germany · going up</li>
+        <li><span class="display">alpabzug</span> German-speaking Switzerland · going down</li>
+        <li><span class="display">désalpe</span> French-speaking Switzerland · going down</li>
+        <li><span class="display">alpaufzug</span> Switzerland · going up</li>
+      </ul>
+      <p class="note">Bonus word: the summer pastures are called <em>Almen</em> in Austria and Germany, and <em>Alpen</em> in Switzerland.</p>
+    </section>
+
+    <section class="section section--blue" id="world">
+      <h2 class="display">around <em>the world</em></h2>
+      <p>Moving animals to fresh grass with the seasons is called <strong>transhumance</strong>. Almabtrieb has cousins in other places too!</p>
+      <div class="cousins">
+        <article class="cousin">
+          <h3 class="display">redyk</h3>
+          <p class="cousin__where">Poland</p>
+          <p>A lot like Almabtrieb, but with sheep instead of cows.</p>
+        </article>
+        <article class="cousin">
+          <h3 class="display">trailing of the sheep</h3>
+          <p class="cousin__where">Idaho, USA</p>
+          <p>Sheep take over the town as they move to their winter pastures.</p>
+        </article>
+        <article class="cousin">
+          <h3 class="display">yaylag</h3>
+          <p class="cousin__where">Turkey &amp; Central Asia</p>
+          <p>The name for the high summer pastures where herders take their animals.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#top" class="footer__mark display">almabtrieb</a>
+    <p class="footer__credit">information sourced from <a href="https://en.wikipedia.org/wiki/Almabtrieb" target="_blank" rel="noopener">wikipedia</a></p>
+  </footer>
+
+</body>
+</html>
