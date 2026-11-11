@@ -49,7 +49,7 @@ img { display: block; width: 100%; }
 }
 .hero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 35%; z-index: -2; }
 .hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--overlay); }
-.hero h1 { font-size: clamp(4.5rem, 14vw, 13rem); color: var(--pale-yellow); }
+.hero h1 { font-size: clamp(4.5rem, 14vw, 8rem); color: var(--pale-yellow); }
 .hero__sub { color: var(--ivory); margin-top: 1.5rem; max-width: 30rem; font-size: 1.2rem; }
 
 .section { padding: 6rem var(--gutter); }
@@ -71,7 +71,7 @@ h3 { font-size: 1.6rem; margin: 1.25rem 0 .4rem; }
   position: relative; z-index: 1; width: 100%; height: 100%;
   object-fit: cover; border-radius: 16px;
 }
-.map__img { object-fit: contain; border-radius: 0; }
+.map__img { object-fit: contain; border-radius: -5; border: 1px solid var(--forest); }
 .stat__img, .season__img, .dress-up__img { filter: saturate(.7) contrast(.95); }
 
 .map { display: grid; grid-template-columns: 1.6fr 1fr; gap: 3rem; align-items: center; margin-top: 3rem; }
